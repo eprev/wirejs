@@ -1,0 +1,13 @@
+{
+    "carbon": {
+        "host": "localhost",
+        "port": "2003"
+    },
+    "path": "/sys/bus/w1/devices",
+    "devices": [{
+        "id": "28-0000049a0f4a",
+        "type": "temperature",
+        "name": "home.temp.office",
+        "interval": "60"
+    }]
+}
