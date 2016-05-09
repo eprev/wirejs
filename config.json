@@ -9,5 +9,10 @@
         "type": "temperature",
         "name": "home.temp.cabinet",
         "interval": "60"
+    }, {
+        "id": "28-0000049a8469",
+        "type": "temperature",
+        "name": "home.temp.outside",
+        "interval": "60"
     }]
 }
