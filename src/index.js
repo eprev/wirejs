@@ -4,7 +4,7 @@ var fs = require('fs');
 var path = require('path');
 var Graphite = require('./graphite');
 
-var config = JSON.parse(fs.readFileSync('./config.json'));
+var config = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'config.json')));
 
 var graphite = new Graphite(config.carbon.host, config.carbon.port);
 

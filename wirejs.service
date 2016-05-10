@@ -1,0 +1,13 @@
+[Service]
+ExecStart=/opt/wirejs/bin/wirejs
+WorkingDirectory=/opt/wirejs
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=wirejs
+User=pi
+Group=pi
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
