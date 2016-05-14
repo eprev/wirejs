@@ -1,6 +1,7 @@
 'use strict';
 
 const net = require('net');
+const debug = require('./debug')('graphite');
 
 class Graphite {
     constructor(host, port) {
@@ -10,6 +11,10 @@ class Graphite {
     open() {
         if (!this.socket) {
             this.socket = net.connect(this.options);
+            this.socket.on('error', (err) => {
+                debug.error(err);
+                this.close();
+            });
             this.socket.on('close', () => {
                 this.close();
             });
