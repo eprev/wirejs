@@ -2,6 +2,8 @@
 
 Tiny service for Raspberry Pi, that monitors connected to the board 1-Wire devices and writes its data to Graphite. Requires Node.js 6+.
 
+![Grafana](grafana.png)
+
 Tested on the original Raspberry Pi B board (running Debian 8.0) with DS18B20 temperature sensors.
 
 ## Installation
