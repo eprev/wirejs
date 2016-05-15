@@ -1,6 +1,6 @@
 # Wire.js
 
-Tiny service for Raspberry Pi, that monitors connected to the board 1-Wire devices and writes its data to Graphite. Requires Node.js 6+.
+Tiny service for Raspberry Pi, that monitors connected to the board 1-Wire devices and writes its data to Graphite.
 
 ![Grafana](grafana.png)
 
@@ -8,13 +8,16 @@ Tested on the original Raspberry Pi B board (running Debian 8.0) with DS18B20 te
 
 ## Installation
 
+Wire.js runs on Node.js 6+.
+
 ### Using a pre-build package
 
 ```
+$ wget https://github.com/eprev/wirejs/releases/download/v1.0.0/wirejs_1.0.0_armhf.deb
 $ sudo dpkg --install wirejs_1.0.0_armhf.deb
 ```
 
-This will install Wire.js to `/opt/wirejs`.
+This  will install Wire.js to `/opt/wirejs`.
 
 ### Bulding from the sources
 
