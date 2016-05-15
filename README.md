@@ -1,6 +1,6 @@
 # Wire.js
 
-Tiny service for Raspberry Pi, that monitors connected to the board Wire-1 devices and writes its data to Graphite. Requires Node.js 6+.
+Tiny service for Raspberry Pi, that monitors connected to the board 1-Wire devices and writes its data to Graphite. Requires Node.js 6+.
 
 Tested on the original Raspberry Pi B board (running Debian 8.0) with DS18B20 temperature sensors.
 
@@ -34,7 +34,7 @@ Edit `/opt/wirejs/etc/wire.json`:
         "host": "localhost",
         "port": "2003"
     },
-    "path": "/sys/bus/w1/devices", /* This is default path to Wire-1 devices */
+    "path": "/sys/bus/w1/devices", /* This is default path to 1-Wire devices */
     "devices": [{
         "id": "28-0000049a0f4a",    /* Device ID */
         "type": "temperature",      /* Device Type (only `temperature` is supported for the time being) */
