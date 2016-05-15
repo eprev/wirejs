@@ -1,5 +1,5 @@
 [Service]
-ExecStart=/opt/wirejs/bin/wirejs
+ExecStart=/opt/wirejs/bin/wirejs -c /opt/wirejs/etc/wire.json
 WorkingDirectory=/opt/wirejs
 Restart=always
 StandardOutput=syslog

@@ -15,7 +15,7 @@ build_package: copy_files
 copy_files: clean
 	mkdir -p ${DIST_DIR}/opt/${PKG_NAME}
 	mkdir -p ${DIST_DIR}/etc/systemd/system
-	cp -r config.json package.json bin src node_modules ${DIST_DIR}/opt/${PKG_NAME}
+	cp -r package.json etc bin src node_modules ${DIST_DIR}/opt/${PKG_NAME}
 	cp -r wirejs.service ${DIST_DIR}/etc/systemd/system
 
 clean:
