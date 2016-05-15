@@ -7,7 +7,7 @@
     "devices": [{
         "id": "28-0000049a0f4a",
         "type": "temperature",
-        "name": "home.temp.cabinet",
+        "name": "home.temp.inside",
         "interval": "60"
     }, {
         "id": "28-0000049a8469",
