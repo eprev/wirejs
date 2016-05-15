@@ -33,7 +33,7 @@ Copy `/opt/wirejs/etc/wire.sample.json` to `/opt/wirejs/etc/wire.json`.
 
 Edit `/opt/wirejs/etc/wire.json`:
 
-```
+```js
 {
     "carbon": {
         "host": "localhost",
