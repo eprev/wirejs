@@ -1,6 +1,6 @@
 # Wire.js
 
-Tiny service for Raspberry Pi, that monitors connected to the board 1-Wire devices and writes its data to Graphite.
+Tiny service for Raspberry Pi, that monitors 1-Wire devices connected to the board and writes its data to Graphite.
 
 ![Grafana](grafana.png)
 
